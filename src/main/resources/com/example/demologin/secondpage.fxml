@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demologin.SecondpageController">
+   <children>
+      <Text layoutX="168.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome! Yours username and password are right!" />
+      <Button fx:id="continuebutton" layoutX="375.0" layoutY="321.0" mnemonicParsing="false" onAction="#continue_action" prefHeight="25.0" prefWidth="150.0" text="Continue" />
+      <Button fx:id="backbutton" layoutX="75.0" layoutY="321.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="150.0" text="log-out" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../../../Users/kupo/Pictures/tsc.gif" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>

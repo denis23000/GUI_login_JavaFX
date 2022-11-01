@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demologin.ContinuepageController">
+   <children>
+      <Text layoutX="104.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is the last page of this javaFX programm. Thanx for using it. Goodbye!" />
+      <Button fx:id="back_button" layoutX="75.0" layoutY="320.0" mnemonicParsing="false" onAction="#back_action" prefHeight="25.0" prefWidth="150.0" text="Back" />
+      <Button fx:id="logout_button" layoutX="375.0" layoutY="320.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="150.0" text="log-out" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../../../Users/kupo/Pictures/7gRx.gif" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>
